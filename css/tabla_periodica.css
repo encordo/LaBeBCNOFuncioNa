@@ -1,14 +1,21 @@
 /* Propiedades de cada casilla elemento y sus componentes */
 .elemento {
     border: 1px solid black;
+    border-collapse: collapse;
     text-align: center;
     display: inline-block;
     padding: 3px;
-    width: 1fr;
+    /* width: minmax(1fr, 5rem); */
 }
 
+.elemento:hover{
+    cursor: pointer;
+}
+.separador:hover{
+    cursor:default;
+}
 .numero-atomico {
-    font-size: 0.8rem
+    font-size: 0.6rem
 }
 
 .simbolo-elemento {
@@ -17,20 +24,22 @@
 }
 
 .nombre-elemento {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 /* Maquetación de la tabla periódica */
 #tabla-periodica {
     display: grid;
-    grid-template-columns: repeat(18, minmax(1fr,1fr));
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(18, minmax(0,1fr));
+    grid-template-rows: repeat(7, 1fr);
+    margin: 3rem
 }
 
-#tabla-periodica-bloque-f{
+#tabla-periodica-bloque-f {
     display: grid;
-    grid-template-columns: repeat(14 ,1fr);
-    grid-template-rows: repeat(2, 1fr)
+    grid-template-columns: repeat(18, minmax(0,1fr));
+    grid-template-rows: repeat(2, 1fr);
+    margin: 3rem;
 }
 
 #elemento-2 {
@@ -43,4 +52,27 @@
 
 #elemento-13 {
     grid-column: 13/13;
+}
+
+#elemento-72 {
+    grid-column: 4/4;
+}
+
+#elemento-104 {
+    grid-column: 4/4;
+}
+#elemento-57 {
+    grid-column: 3/3;
+}
+
+#elemento-89 {
+    grid-column: 3/3;
+}
+#lantanidos{
+    grid-column: 3/3;
+    grid-row: 6/6;
+}
+#actinidos{
+    grid-column: 3/3;
+    grid-row:  7/7;
 }
