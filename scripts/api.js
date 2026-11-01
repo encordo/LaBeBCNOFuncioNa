@@ -1,3 +1,7 @@
+// ==== IMPORTS =======
+import {Element} from "../classes/Element.js";
+import {Isotope} from "../classes/Isotope.js";
+
 // ===== PARÁMETROS =======
 const URL_API = "https://api.periodictableofelements.org/elements/";
 
@@ -8,7 +12,8 @@ export async function getAllElements() {
             if (!res.ok) {
                 throw new Error(`Error HTTP: ${res.status}`);
             }
-            return res.json();
+            //return res.json().results.map(e=>new Elemento(e));
+            return res.json().map(e=>new Element(e));
         });
 }
 
@@ -18,7 +23,7 @@ export async function getSingleElement(atomicNumber) {
             if (!res.ok) {
                 throw new Error(`Error HTTP: ${res.status}`);
             }
-            return res.json();
+            return new Element(res.json());
         });
 }
 
