@@ -9,3 +9,18 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+header{
+    padding-left: 3rem;
+}
+header #foto-banner{
+    width: 25%;
+
+}
+header #foto-banner img{
+    width: 100%
+}
+main{
+    background-color: #EEEEEE;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
