@@ -13,7 +13,9 @@ export async function getAllElements() {
                 throw new Error(`Error HTTP: ${res.status}`);
             }
             //return res.json().results.map(e=>new Elemento(e));
-            return res.json().map(e=>new Element(e));
+            return res.json();
+        }).then(rtJson =>{
+            return rtJson.map(e=>new Element(e));
         });
 }
 
@@ -23,7 +25,10 @@ export async function getSingleElement(atomicNumber) {
             if (!res.ok) {
                 throw new Error(`Error HTTP: ${res.status}`);
             }
-            return new Element(res.json());
+            return res.json();
+        })
+        .then(rtJson =>{
+            return new Element(rtJson);
         });
 }
 
