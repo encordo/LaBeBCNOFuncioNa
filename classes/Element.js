@@ -1,3 +1,5 @@
+import { Isotope } from "./Isotope.js";
+
 export class Element {
     constructor(data) {
         this.id = data.id;//     "id": 86,
@@ -34,8 +36,9 @@ export class Element {
         this.description = data.description;// "description": "Radon is a colorless, odorless radioactive gas formed from radium decay. It is the densest gas known. Radon seeps from the ground and accumulates in basements, causing thousands of lung cancer deaths per year.",
         this.uses = data.uses;// "uses": "Radon testing in buildings, earthquake prediction research, and hydrological research.",
         this.fun_fact = data.fun_fact;// "fun_fact": "Radon is the second leading cause of lung cancer after smoking, yet it is odorless and invisible. The EPA recommends testing all homes.",
-        this.named_after = data.named_after;// "named_after": "Named after radium, from which it is produced",
-        this.isotopes = data.isotopes;// "isotopes": [
+        this.named_after = data.named_after;// "named_after": "Named after radium, from which it is produced",       
+        this.isotopes = data.isotopes;
+        // "isotopes": [
         //     {
         //         "stable": false,
         //         "abundance": null,
