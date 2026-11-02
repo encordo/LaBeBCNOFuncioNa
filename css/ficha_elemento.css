@@ -1,9 +1,51 @@
+.elem-dato{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid blue;
+}
+.elem-propiedad{
+    font-weight: bold;
+    border-right: 1px solid blue;
+    padding: 1rem;
+    width: 50%;
+}
+.elem-valor{
+    padding: 1rem;
+    width: 50%;
+}
+.ficha-isotopo{
+    border: 1px solid blue;
+    margin-bottom: 0.5rem;
+}
+.ficha-dato{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid blue;
+}
+.ficha-propiedad{
+    font-weight: bold;
+    border-right: 1px solid blue;
+    width: 50%;
+    padding: 0.5rem;
+}
+.ficha-valor{
+    width: 50%;
+    padding: 0.5rem;
+}
+.color-box{
+    display: inline-block;
+    border: 1px solid black;
+    width: 2.5rem;
+    height: 1rem;
+    margin-left: 1.5rem;
+}
 #ficha{
     padding-left: 2rem;
+    padding-right: 2rem;
 }
-#ficha div{
-    margin-bottom: 0.5rem;
-}
-#ficha ul{
-    margin-bottom: 0.5rem;
+#casilla-isotopos{
+
 }
