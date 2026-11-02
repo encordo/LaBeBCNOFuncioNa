@@ -11,6 +11,13 @@ body{
 }
 header{
     padding-left: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav{
+    margin: 3rem;
 }
 header #foto-banner{
     width: 25%;
