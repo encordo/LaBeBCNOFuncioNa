@@ -46,6 +46,13 @@
     padding-left: 2rem;
     padding-right: 2rem;
 }
-#casilla-isotopos{
-
+#entrada-isotopos{
+    flex-direction: column;
+}
+#entrada-isotopos > div{
+    width: 100%;
+}
+#entrada-isotopos .elem-propiedad{
+    border-right: 0;
+    border-bottom: 1px solid blue;
 }

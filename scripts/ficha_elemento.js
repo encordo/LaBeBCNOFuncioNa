@@ -3,7 +3,7 @@ import { getSingleElement } from "./api.js";
 
 // ========== FUNCTIONS ==========
 //Sustituye los _ por espacios y pone el string en mayúsculas.
-function formatProperty(name){
+function formatProperty(name) {
     let cadena = name.replaceAll("_", " ");
     cadena = cadena.toUpperCase();
     return cadena;
@@ -22,10 +22,10 @@ async function initPage() {
         let divVal = document.createElement("div");
         divVal.classList.add("elem-valor");
         divProp.innerText = formatProperty(propiedad);
-        if(propiedad === "is_synthetic" || propiedad === "is_radioactive"){
-            divVal.innerText = elemento[propiedad]? "✔" : "✖" ;
+        if (propiedad === "is_synthetic" || propiedad === "is_radioactive") {
+            divVal.innerText = elemento[propiedad] ? "✔" : "✖";
         }
-        else if(propiedad === "category_color" || propiedad === "cpk_hex_color"){
+        else if (propiedad === "category_color" || propiedad === "cpk_hex_color") {
             let spanCol = document.createElement("span");
             spanCol.innerText = elemento[propiedad];
             divVal.append(spanCol);
@@ -35,11 +35,11 @@ async function initPage() {
             divVal.append(spanCol);
         }
         else if (propiedad === "isotopes") {
-            divVal.id = "casilla-isotopos";
-            for(let isotopo of elemento[propiedad]){
+            divDat.id = "entrada-isotopos";
+            for (let isotopo of elemento[propiedad]) {
                 let fichaIsotopo = document.createElement("div");
                 fichaIsotopo.classList.add("ficha-isotopo")
-                for(let prop in isotopo){
+                for (let prop in isotopo) {
                     let divIsoDat = document.createElement("div");
                     let divIsoProp = document.createElement("div");
                     let divIsoVal = document.createElement("div");
@@ -47,17 +47,20 @@ async function initPage() {
                     divIsoProp.classList.add("ficha-propiedad");
                     divIsoVal.classList.add("ficha-valor");
                     divIsoProp.innerText = formatProperty(prop);
-                    divIsoVal.innerText = isotopo[prop];
-                    divIsoDat.append(divIsoProp,divIsoVal);
+                    if (prop === "stable")
+                        divIsoVal.innerText = isotopo[prop] ? "✔" : "✖";
+                    else
+                        divIsoVal.innerText = isotopo[prop];
+                    divIsoDat.append(divIsoProp, divIsoVal);
                     fichaIsotopo.append(divIsoDat);
                 }
                 divVal.append(fichaIsotopo);
             }
-        } else{
+        } else {
             divVal.innerText = elemento[propiedad];
-            
+
         }
-        divDat.append(divProp,divVal);
+        divDat.append(divProp, divVal);
         ficha.append(divDat);
     }
 }
