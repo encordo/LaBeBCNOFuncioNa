@@ -6,69 +6,89 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
-header{
+
+header {
     padding-left: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-header nav{
-    margin: 3rem;
-}
-header #foto-banner{
-    width: 25%;
+
+header #foto-banner {
+    width: 100%;
 
 }
-header #foto-banner img{
+
+header #foto-banner img {
     width: 100%
 }
-main{
+
+main {
     background-color: #BBBBBB;
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
-footer{
+
+footer {
     text-align: center;
     padding: 2rem;
 }
-#rrss{
-    padding-top:1rem;
+
+#rrss {
+    padding-top: 1rem;
 }
-#rrss img{
+
+#rrss img {
     width: 4rem;
 }
+
 /* Categories */
-.nonmetal{
+.nonmetal {
     background-color: #A8E6CF;
 }
-.alkali_metal{
+
+.alkali_metal {
     background-color: #FFB3BA;
 }
-.alkaline_earth_metal{
+
+.alkaline_earth_metal {
     background-color: #FFDFBA;
 }
-.transition_metal{
+
+.transition_metal {
     background-color: #FFFFBA;
 }
-.post_transition_metal{
+
+.post_transition_metal {
     background-color: #BAE1FF;
 }
-.metalloid{
+
+.metalloid {
     background-color: #DEB887;
 }
-.noble_gas{
+
+.noble_gas {
     background-color: #F0F0F0;
 }
-.lanthanide{
+
+.lanthanide {
     background-color: #E0BBE4;
 }
-.actinide{
+
+.actinide {
     background-color: #957DED;
 }
-.unknown{
+
+.unknown {
     background-color: #BAFFC9;
+}
+
+@media (min-width:768px) {
+    header #foto-banner img {
+        width: 25%
+    }
 }
