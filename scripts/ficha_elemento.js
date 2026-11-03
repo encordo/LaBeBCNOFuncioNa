@@ -46,6 +46,29 @@ function setFicha(elemento) {
             else if (propiedad === "category") {
                 divVal.innerText = elemento[propiedad].replaceAll("_", " ");
             }
+            //Se añaden grados Kelvin
+            else if(propiedad === "boiling_point" || propiedad === "melting_point"){
+                divVal.innerText = elemento[propiedad] + " ºK";
+            }
+            //Se añaden kJ/mol
+            else if(propiedad === "ionization_energy" || propiedad === "electron_affinity"){
+                divVal.innerText = elemento[propiedad] + " kJ/mol";
+            }
+            //Se añaden g/cm³
+            else if(propiedad === "density"){
+                divVal.innerText = elemento[propiedad] + " g/cm³";
+            }
+            //Se añaden pm
+            else if(propiedad === "atomic_radius" || propiedad === "covalent_radius" || propiedad === "van_der_waals_radius"){
+                divVal.innerText = elemento[propiedad] + " pm";
+            }
+            else if(propiedad === "atomic_mass"){
+                divVal.innerText = elemento[propiedad] + " uma"
+            }
+            //Se identa la lista de elementos
+            else if(propiedad === "electrons_per_shell"){
+                divVal.innerText = elemento[propiedad].join(", ");
+            }
             //Tratamiento especial a isótopos ya que es una lista de objetos complejos.
             else if (propiedad === "isotopes") {
                 divDat.id = "entrada-isotopos";
