@@ -1,59 +1,98 @@
-.elem-dato{
+.elem-dato {
     background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: center;
     border: 1px solid blue;
 }
-.elem-propiedad{
+
+.elem-propiedad {
     font-weight: bold;
     border-right: 1px solid blue;
     padding: 1rem;
     width: 50%;
 }
-.elem-valor{
+
+.elem-valor {
     padding: 1rem;
     width: 50%;
 }
-.ficha-isotopo{
+
+.ficha-isotopo {
     border: 1px solid blue;
     margin-bottom: 0.5rem;
 }
-.ficha-dato{
+
+.ficha-dato {
     display: flex;
     flex-direction: row;
     justify-content: center;
     border: 1px solid blue;
 }
-.ficha-propiedad{
+
+.ficha-propiedad {
     font-weight: bold;
     border-right: 1px solid blue;
     width: 50%;
     padding: 0.5rem;
 }
-.ficha-valor{
+
+.ficha-valor {
     width: 50%;
     padding: 0.5rem;
 }
-.color-box{
+
+.color-box {
     display: inline-block;
     border: 1px solid black;
     width: 2.5rem;
     height: 1rem;
     margin-left: 1.5rem;
 }
-#ficha{
+
+#ficha {
     padding-left: 2rem;
     padding-right: 2rem;
     font-size: 0.9rem;
 }
-#entrada-isotopos{
+
+#entrada-isotopos {
     flex-direction: column;
 }
-#entrada-isotopos > div{
+
+#entrada-isotopos>div {
     width: 100%;
 }
-#entrada-isotopos .elem-propiedad{
+
+#entrada-isotopos .elem-propiedad {
     border-right: 0;
     border-bottom: 1px solid blue;
+}
+
+@media (min-width:768px) {
+    #ficha {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .elem-dato {
+        width: 50%;
+    }
+
+    .ficha-isotopo {
+        margin-right: 0.5rem;
+        width: 20%;
+    }
+
+    #entrada-isotopos {
+        width: 100%;
+    }
+
+    #entrada-isotopos >.elem-valor {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
 }
