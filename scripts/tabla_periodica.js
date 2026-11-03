@@ -29,7 +29,8 @@ function initPage() {
         //Evento
         divElemento.addEventListener("click",function(){
             //Llamada a la página de ficha individual.
-            window.open("./ficha_elemento.html?id="+elemento.atomic_number,"_self");
+            localStorage.setItem("numeroAtomico", elemento.atomic_number);
+            window.open("./ficha_elemento.html","_self");
         })
         //Asignación a la tabla principal o al bloque f según corresponda
         if ((elemento.atomic_number >= 57 && elemento.atomic_number <= 71) ||

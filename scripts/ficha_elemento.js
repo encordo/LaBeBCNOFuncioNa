@@ -104,8 +104,7 @@ function setFicha(elemento) {
 //Inicializa la página
 async function initPage() {
     const ficha = document.getElementById("ficha");
-    const url = new URL(window.location.href);
-    let id = url.searchParams.get('id');
+    let id = localStorage.getItem("numeroAtomico");
     const elemento = await getSingleElement(id);
     setElemento(elemento);
     setFicha(elemento);
