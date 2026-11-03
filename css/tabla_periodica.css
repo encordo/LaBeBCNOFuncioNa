@@ -24,7 +24,7 @@
 }
 
 .nombre-elemento {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 /* Maquetación de la tabla periódica */
@@ -75,4 +75,35 @@
 #actinidos{
     grid-column: 3/3;
     grid-row:  7/7;
+}
+/* Categories */
+.nonmetal{
+    background-color: #A8E6CF;
+}
+.alkali_metal{
+    background-color: #FFB3BA;
+}
+.alkaline_earth_metal{
+    background-color: #FFDFBA;
+}
+.transition_metal{
+    background-color: #FFFFBA;
+}
+.post_transition_metal{
+    background-color: #BAE1FF;
+}
+.metalloid{
+    background-color: #DEB887;
+}
+.noble_gas{
+    background-color: #F0F0F0;
+}
+.lanthanide{
+    background-color: #E0BBE4;
+}
+.actinide{
+    background-color: #957DED;
+}
+.unknown{
+    background-color: #BAFFC9;
 }
