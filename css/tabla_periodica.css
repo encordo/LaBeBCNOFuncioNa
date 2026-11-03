@@ -1,4 +1,7 @@
 /* Propiedades de cada casilla elemento y sus componentes */
+main{
+    min-width: 1200px;
+}
 .elemento {
     border: 1px solid black;
     border-collapse: collapse;
