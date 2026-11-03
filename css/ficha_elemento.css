@@ -1,3 +1,32 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Configuración Casilla */
+#elemento {
+    border: 1px solid black;
+    text-align: center;
+    display: block;
+    padding: 3px;
+    margin: 0 3rem 3rem 3rem;
+    width: 8rem;
+    align-self: center;
+}
+
+#numero-atomico {
+    font-size: 1.2rem
+}
+
+#simbolo-elemento {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+#nombre-elemento {
+    font-size: 1.4rem;
+}
+/* Configuración ficha */
 .elem-dato {
     background-color: white;
     display: flex;

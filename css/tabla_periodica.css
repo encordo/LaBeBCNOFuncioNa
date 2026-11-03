@@ -1,14 +1,13 @@
 /* Propiedades de cada casilla elemento y sus componentes */
 main{
     min-width: 1200px;
+    
 }
 .elemento {
     border: 1px solid black;
-    border-collapse: collapse;
     text-align: center;
     display: inline-block;
     padding: 3px;
-    /* width: minmax(1fr, 5rem); */
 }
 
 .elemento:hover{
@@ -78,35 +77,4 @@ main{
 #actinidos{
     grid-column: 3/3;
     grid-row:  7/7;
-}
-/* Categories */
-.nonmetal{
-    background-color: #A8E6CF;
-}
-.alkali_metal{
-    background-color: #FFB3BA;
-}
-.alkaline_earth_metal{
-    background-color: #FFDFBA;
-}
-.transition_metal{
-    background-color: #FFFFBA;
-}
-.post_transition_metal{
-    background-color: #BAE1FF;
-}
-.metalloid{
-    background-color: #DEB887;
-}
-.noble_gas{
-    background-color: #F0F0F0;
-}
-.lanthanide{
-    background-color: #E0BBE4;
-}
-.actinide{
-    background-color: #957DED;
-}
-.unknown{
-    background-color: #BAFFC9;
 }

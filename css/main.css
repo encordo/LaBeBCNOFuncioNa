@@ -31,3 +31,34 @@ main{
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
+/* Categories */
+.nonmetal{
+    background-color: #A8E6CF;
+}
+.alkali_metal{
+    background-color: #FFB3BA;
+}
+.alkaline_earth_metal{
+    background-color: #FFDFBA;
+}
+.transition_metal{
+    background-color: #FFFFBA;
+}
+.post_transition_metal{
+    background-color: #BAE1FF;
+}
+.metalloid{
+    background-color: #DEB887;
+}
+.noble_gas{
+    background-color: #F0F0F0;
+}
+.lanthanide{
+    background-color: #E0BBE4;
+}
+.actinide{
+    background-color: #957DED;
+}
+.unknown{
+    background-color: #BAFFC9;
+}
