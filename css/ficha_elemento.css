@@ -5,7 +5,7 @@
     display: block;
     padding: 3px;
     margin: 0 3rem 3rem 3rem;
-    width: 8rem;
+    width: 9rem;
     align-self: center;
 }
 
@@ -19,7 +19,7 @@
 }
 
 #nombre-elemento {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 /* Configuración ficha */
@@ -115,7 +115,7 @@
     /* Configuración casilla */
     #elemento {
         width: auto;
-        margin: 0 14rem 3rem 14rem;
+        margin: 0 13rem 3rem 13rem;
         grid-column: 1/1;
         grid-row: 1/6;
     }
@@ -129,7 +129,7 @@
     }
 
     #nombre-elemento {
-        font-size: 2.8rem;
+        font-size: 2.4rem;
     }
 
     /* Configuración ficha */
