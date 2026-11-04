@@ -20,7 +20,7 @@ function setElemento(elemento) {
 function setFicha(elemento) {
     for (let propiedad in elemento) {
         //No se pone en la ficha los parámetros: id,atomic_number,symbol,name,slug.
-        if (!["id", "atomic_number", "symbol", "name", "slug"].includes(propiedad)) {
+        if (!["id", "atomic_number", "symbol", "name", "slug","category_color"].includes(propiedad)) {
             let divDat = document.createElement("div");
             divDat.classList.add("elem-dato");
             let divProp = document.createElement("div");
@@ -33,7 +33,7 @@ function setFicha(elemento) {
                 divVal.innerText = elemento[propiedad] ? "✔" : "✖";
             }
             //A los valores cromáticos se les añade un recuadro con el color visible.
-            else if (propiedad === "category_color" || propiedad === "cpk_hex_color") {
+            else if (propiedad === "cpk_hex_color") {
                 let spanCol = document.createElement("span");
                 spanCol.innerText = elemento[propiedad];
                 divVal.append(spanCol);
